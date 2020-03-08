@@ -9,6 +9,5 @@ stock = {
 
 def stock_levels(amount)
     lowest = amount.find {|s| s[:apr] < amount[:apr] }
-end
 
 end
