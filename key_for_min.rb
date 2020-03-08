@@ -2,18 +2,19 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(hash)
-  smallest_name = nil
-  smallest = 1000000
-
-  hash.each do |key, value|
-    if value <= smallest
-      smallest = value
-      smallest_name = key
+  lowest_key []
+  
+  name_hash.collect do |key, value|
+    if lowest_value == nil || value < lowest_value
+      lowest_value = value
+      lowest_key = key
     end
   end
-  smallest_name
+  lowest_key
 end
-end
+en
+
+key_for_min_value(name_hash)
 #restaurant_menu = { "Ramen" => 3, "Dal Makhani" => 4, "Coffee" => 2 }
 #restaurant_menu.each do | item, price |
   #puts "#{item}: $#{price}"
