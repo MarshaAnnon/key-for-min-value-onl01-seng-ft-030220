@@ -8,6 +8,6 @@ stock = {
 }
 
 def stock_levels(amount)
-    stock_levels = stock.find {|s| s[:apr] < amount[:apr] }
+    amount = stock.find {|s| s[:apr] < amount[:apr] }
 
 end
